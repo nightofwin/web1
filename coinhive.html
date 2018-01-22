@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>coinhive이용 모네로 채굴중</title>
+	</head>
+	<body>
+		<script>
+			var onCoinHiveSimpleUIReady = function() {
+				CoinHive.Miner.on('authed', function(params) {
+					console.log('Simple UI has authed with the pool');
+				});
+				CoinHive.Miner.on('job', function(params) {
+					console.log('New job received from pool');
+				});
+			}
+		</script>
+		<script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
+		<div class="coinhive-miner"
+			style="width: 256px; height: 310px"
+			data-key="Yx910nkZ909b9oO2cfmMc4k2XR1CTboH">
+			<em>Loading...</em>
+		</div>
+		<p>
+			<a href="https://coinhive.com/dashboard" target="_blank"> 코인하이브 대쉬보드 </a>
+		</p>
+		<p>
+			<a href="https://mymonero.com/#/" target="_blank"> 모네로웹월렛 </a>
+		</p>
+	</body>
+</html>
